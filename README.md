@@ -88,7 +88,7 @@ Target platforms
 
 Visual Basic 5.0, Visual Basic 6.0
 
-You need Microsoft® Visual Basic® 5.0 Service Pack 3 or higher 
+You need MicrosoftÂ® Visual BasicÂ® 5.0 Service Pack 3 or higher 
 in order to run properly. If you need a version without any 
 service pack, it is possible, you have to contact me in that case.
                  
@@ -289,16 +289,23 @@ Web Site : http://www.ppreview.net
 
 System Requirements
 -------------------
-You need a computer running Microsoft® Windows 95/98® or Microsoft® Windows NT®.
-Microsoft® Visual Basic® 5.0 (Service Pack 3) or Higher with all the runtime installed and 
+You need a computer running MicrosoftÂ® Windows 95/98Â® or MicrosoftÂ® Windows NTÂ®.
+MicrosoftÂ® Visual BasicÂ® 5.0 (Service Pack 3) or Higher with all the runtime installed and 
 an installation of Internet Explorer 3.0 or 4.0 or higher installed.
 
 
 Installation
 ------------
 
-Just start the program "Install.EXE". Once it is done, start your VB, you have a new toolbar, 
-and new items in the Edit Menu and in the contextual menu of your Code window.
+1. download zip from github
+2. open "Whole VBIDEUTILS.vbg" project
+3. File > Build Project
+4. This will create about 17 files in the project directory, so sort by date and copy all of those new files
+5. Create folder "VBIDEUtils" ie. Program Files (x86)\Microsoft Visual Studio\VB98\Addins\VBIDEUtils
+6. paste those 17 files into that folder
+7. Use regsvr32 to register each of the three .dll and one .ocx out of the ones you copied
+8. back to VB6 - type ADDTOINI in Immediate Folder
+9. Exit VB6 - I didn't save changes to the project.
 
 
 Problems
